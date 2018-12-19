@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | rebri</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="fonts/style.css">
+    <meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+
+    <script src="js/main.js"></script>
+
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/animacion.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+
+<div class="primera">
+    <img src="imagenes/tec.png">
+    </div>
+
+
+    <header>
+        <div class="menu-bar">
+          <a href="#" class="bt-menu"><span class="icon-navicon"></span>MENU</a>
+        </div>
+
+         <nav>
+          <ul>
+            <li><a href="index.html"> <span class="icon-home" ></span> Inicio </a></li>
+            <li><a href="videos.html"> <span class="icon icon-globe" ></span> Videos y Audios </a></li>
+            <li><a href="animacion.html"> <span class="icon icon-rocket" ></span> Proyectos 3D</a></li>
+            
+          </ul>
+         </nav>
+     </header> 
+
+
+      <div class="clearfix"></>
+  <div id="animacion">
+    <div class="container">
+      <h2 class="subheader">Animación</h2>
+      <div class="animacion">
+        
+
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+       
+      </div>
+    </div>
+
+
+      </div><!-- aqui termina cada video-->
+
+    
+  </body>
+</html>
